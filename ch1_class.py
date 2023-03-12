@@ -8,6 +8,9 @@ class Student():
     def __str__(self):
         return 'str: {}'.format(self._name)
 
+    def __repr__(self):
+        return 'repr: {}'.format(self._name)
+
 
 student1 = Student('Sukie', 1, 1, {'gender': 'male', 'math': 100})
 student2 = Student('Ryan', 2, 7, {'gender': 'female', 'math': 90})
