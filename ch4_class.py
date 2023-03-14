@@ -25,3 +25,20 @@ temp_location_dic = {'x': 7, 'y': 7}
 # Declare namedtuple
 Location = namedtuple('Location', ['x', 'y'])
 print(Location(**temp_location_dic))
+
+location = Location(7, 7)
+print(location[0] + location[1])
+print(location.x + location.y)
+
+# method for namedtuple make()
+location2 = location._make([8, 8])
+print(location2)
+
+# checking the field names
+print(location._fields)
+
+# _asdict() : return values as OrderedDict
+print(location._asdict())
+
+# _replace : return values replaced
+print(location._replace(y=100))
