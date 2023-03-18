@@ -15,3 +15,8 @@ for j in range(0, len(dateList)):
     if (dateList[j] in it_holidays):
         holidayList.append(dateList[j].strftime('%Y%m%d'))
 print(holidayList)
+
+italyHolidays = [dateList[k].strftime('%Y%m%d') for k in range(
+    0, len(dateList)) if dateList[k] in it_holidays]
+
+print(italyHolidays == holidayList)
